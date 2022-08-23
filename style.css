@@ -2,19 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+ 
 }
-nav{
+
+.navegador{
     height: 100px;
-    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     background-color: #33B3D8;
 }
 ul{
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
-    height: 100%;
     list-style: none;
     margin-right: 20px;
     font-family: 'Oswald', sans-serif;
@@ -55,50 +55,86 @@ li{
     border-radius: 20px;
 
 }
-a:hover{
+.boton:hover{
     border-bottom: solid #4EC21F 5px;
     background-color: #98ED5D;
 }
 
 .contenedor{
-    position: relative;
-    display: inline-block;
-    
-}
-.portada{
-    opacity: .6;
-}
-.texto-encima{
-    position: absolute;
-    top: 30px;
-    right: 50%;
-    left: 10%;
-    text-decoration-style: solid;
-    font-size: 30px;
-    font-family: 'Oswald', sans-serif;
-
-    
-
+    width: 100%;
+    height: 50%;
+    display: flex;
+    background-image: url(laboratorio1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.botonsito{
-    position: absolute;
-    top: 60%;
-    left: 24%;
-    font-size: 25px;
-    border: 25px;
+.sub-contenedor{
     color: black;
+    padding: 0px 90px;
+    text-decoration: solid;
+}
+.sub-contenedor h2 {
+    font-size: 30px;
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 100px;
     font-family: 'Oswald', sans-serif;
-    text-align: center;
-    background-color: white;
-    width: 200px;
-    height: 40px;
-    text-decoration: none;
-    border-radius: 20px;
-    
     
 }
-.botonsito:hover{
-    border-bottom: solid #4EC21F 5px;
-    background-color: #98ED5D;  
+.sub-contenedor h4{
+    font-size: 15px;
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    font-family: 'Oswald', sans-serif;
+}
+.bottom{
+    width: 150px;
+    color: #0e0e0e;
+    border-color: #0e0e0e;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    background: #fff;
+    border-style: solid;
+    margin-left: 100px;
+    border: 1px;
+    padding: 15px;
+    font-weight: 600;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+#B1{
+   border-bottom: #4EC21F;
+   background-color: #98ED5D; 
+}
+
+#B2:hover{
+    border-bottom: #4EC21F;
+    background-color: #98ED5D;
+}
+#B2{
+    margin-left: 1%;
+}
+.bajo{
+    width: 100%;
+    height: 100%;
+}
+.sub-contenedor2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 35%;
+    margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
 }
